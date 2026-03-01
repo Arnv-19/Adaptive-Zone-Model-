@@ -308,4 +308,14 @@ public class SimulationDashboard extends JFrame {
         stopRealTimeMonitoring();
         super.dispose();
     }
+
+    public void setZoneManager(ZoneManager zoneManager) {
+        this.zoneManager = zoneManager;
+        if (metricsPanel != null) {
+            metricsPanel.setZoneManager(zoneManager);
+        }
+        if (zonePanel != null) {
+            zonePanel.setZoneManager(zoneManager);
+        }
+    }
 }

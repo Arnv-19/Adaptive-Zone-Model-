@@ -1,0 +1,2 @@
+Error: Could not find or load main class org.cloudsim.adaptive.zone.AdaptiveZoneSimulation
+Caused by: java.lang.ClassNotFoundException: org.cloudsim.adaptive.zone.AdaptiveZoneSimulation

@@ -8,6 +8,7 @@ import java.util.Map;
 import org.cloudbus.cloudsim.Host;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.VmAllocationPolicy;
+import org.cloudsim.adaptive.zone.ml.MLVmPlacementPredictor;
 
 
 /**
@@ -17,11 +18,13 @@ public class AdaptiveVmAllocationPolicy extends VmAllocationPolicy {
 
     private ZoneManager zoneManager;
     private Map<String, Vm> vmTable;
+    private MLVmPlacementPredictor mlPredictor;
 
     public AdaptiveVmAllocationPolicy(List<? extends Host> hostList, ZoneManager zoneManager) {
         super(hostList);
         this.zoneManager = zoneManager;
         this.vmTable = new HashMap<>();
+        this.mlPredictor = new MLVmPlacementPredictor();
     }
 
     @Override
@@ -32,11 +35,12 @@ public class AdaptiveVmAllocationPolicy extends VmAllocationPolicy {
         // Assign VM to the determined zone
         zoneManager.assignVMToZone(vm, targetZone);
 
-        // Find the best host within the zone constraints
-        Host selectedHost = findBestHostForVM(vm, targetZone);
+        // Find the best host using ML Predictor
+        Host selectedHost = mlPredictor.predictBestHost(vm, getHostList());
 
         if (selectedHost != null && selectedHost.vmCreate(vm)) {
             vmTable.put(vm.getUid(), vm);
+            mlPredictor.train(vm, selectedHost, 1.0); // Train with success score
             Log.printLine("VM " + vm.getId() + " allocated to Host " + selectedHost.getId() + " in Zone " + targetZone);
             return true;
         }
@@ -52,6 +56,8 @@ public class AdaptiveVmAllocationPolicy extends VmAllocationPolicy {
             // Determine zone and update zone manager
             int targetZone = determineVMZone(vm);
             zoneManager.assignVMToZone(vm, targetZone);
+
+            mlPredictor.train(vm, host, 1.0); // Train with success score
 
             Log.printLine("VM " + vm.getId() + " allocated to specified Host " + host.getId());
             return true;

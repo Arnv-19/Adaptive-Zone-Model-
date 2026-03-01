@@ -146,9 +146,13 @@ public class MLVmPlacementPredictor {
      * Calculate host utilization
      */
     private double calculateHostUtilization(Host host) {
-        double cpuUtil = (double) host.getUtilizationOfCpu() / host.getTotalMips();
-        double ramUtil = (double) host.getRamProvisioner().getUsedRam() / host.getRam();
-        double storageUtil = (double) (host.getStorage() - host.getStorage()) / host.getStorage();
+        double usedMips = 0;
+        for (Vm vm : host.getVmList()) {
+            usedMips += vm.getMips();
+        }
+        double cpuUtil = host.getTotalMips() > 0 ? usedMips / host.getTotalMips() : 0.0;
+        double ramUtil = host.getRam() > 0 ? (double) host.getRamProvisioner().getUsedRam() / host.getRam() : 0.0;
+        double storageUtil = 0.0; // CloudSim 3.0.3 standard Host does not track dynamic storage use natively
         
         return (cpuUtil * 0.4 + ramUtil * 0.3 + storageUtil * 0.3);
     }

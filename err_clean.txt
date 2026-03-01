@@ -1,0 +1,13 @@
+Cloudsim-AdaptiveZoneModel\src\org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:447: error: cannot find symbol
+            ZoneMetrics metrics = zoneManager.getZoneMetrics(i);
+            ^
+  symbol:   class ZoneMetrics
+  location: class AdaptiveZoneSimulation
+Cloudsim-AdaptiveZoneModel\src\org\cloudsim\adaptive\zone\ml\MLVmPlacementPredictor.java:149: error: cannot find symbol
+        double cpuUtil = (double) host.getUtilizationOfCpu() / host.getTotalMips();
+                                      ^
+  symbol:   method getUtilizationOfCpu()
+  location: variable host of type Host
+Note: Cloudsim-AdaptiveZoneModel\src\org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 errors

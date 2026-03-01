@@ -70,12 +70,8 @@ public class ComparisonPanel extends JPanel {
             "Energy Efficiency"
         };
 
-        Object[][] data = {
-            {"Adaptive Zone Model", "40", "125.5", "87.2", "8", "High"},
-            {"Best Fit", "40", "156.3", "79.4", "12", "Medium"},
-            {"First Fit", "40", "178.9", "72.8", "5", "Low"},
-            {"Round Robin", "40", "165.7", "75.1", "15", "Medium"}
-        };
+        // Start with empty data, will be populated by the simulation runner
+        Object[][] data = {};
 
         tableModel = new DefaultTableModel(data, columnNames) {
             @Override
@@ -154,16 +150,40 @@ public class ComparisonPanel extends JPanel {
 
         if (width <= 0 || height <= 0) return;
 
-        // Sample data for visualization
-        String[] algorithms = {"Adaptive", "Best Fit", "First Fit", "Round Robin"};
-        int[] values = {87, 79, 73, 75}; // Sample performance values
-        Color[] colors = {Color.GREEN, Color.BLUE, Color.ORANGE, Color.MAGENTA};
+        // Dynamic data for visualization based on tableModel
+        int rowCount = tableModel.getRowCount();
+        if (rowCount == 0) return;
+        
+        String[] algorithms = new String[rowCount];
+        int[] values = new int[rowCount];
+        Color[] colors = {Color.GREEN, Color.BLUE, Color.ORANGE, Color.MAGENTA, Color.CYAN, Color.RED};
+
+        for (int i = 0; i < rowCount; i++) {
+            algorithms[i] = (String) tableModel.getValueAt(i, 0); // Algorithm name
+            String valStr;
+            if (title.contains("Response Time")) {
+                valStr = (String) tableModel.getValueAt(i, 2); // Avg Response Time
+            } else {
+                valStr = (String) tableModel.getValueAt(i, 3); // Resource Utilization
+            }
+            try {
+                values[i] = (int) Double.parseDouble(valStr);
+            } catch (Exception e) {
+                values[i] = 0;
+            }
+        }
+
+        int maxValue = 1;
+        for (int v : values) {
+            if (v > maxValue) maxValue = v;
+        }
 
         int barWidth = width / (algorithms.length + 1);
         int maxHeight = height - 40;
 
         for (int i = 0; i < algorithms.length; i++) {
-            int barHeight = (values[i] * maxHeight) / 100;
+            // Scale dynamically against the maximum value found
+            int barHeight = (values[i] * maxHeight) / maxValue;
             int x = (i + 1) * barWidth - barWidth/2;
             int y = height - barHeight - 20;
 

@@ -1,0 +1,419 @@
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:12: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.VmAllocationPolicy;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:17: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Cloudlet;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:18: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.CloudletSchedulerTimeShared;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:19: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Datacenter;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:20: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.DatacenterBroker;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:21: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.DatacenterCharacteristics;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:22: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Host;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:23: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Log;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:24: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Pe;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:25: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Storage;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:26: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.UtilizationModel;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:27: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.UtilizationModelFull;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:28: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Vm;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:29: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.VmSchedulerTimeShared;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:30: error: package org.cloudbus.cloudsim.core does not exist
+import org.cloudbus.cloudsim.core.CloudSim;
+                                 ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:31: error: package org.cloudbus.cloudsim.provisioners does not exist
+import org.cloudbus.cloudsim.provisioners.BwProvisionerSimple;
+                                         ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:32: error: package org.cloudbus.cloudsim.provisioners does not exist
+import org.cloudbus.cloudsim.provisioners.PeProvisionerSimple;
+                                         ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:33: error: package org.cloudbus.cloudsim.provisioners does not exist
+import org.cloudbus.cloudsim.provisioners.RamProvisionerSimple;
+                                         ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:40: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:41: error: package com.google.gson.reflect does not exist
+import com.google.gson.reflect.TypeToken;
+                              ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:49: error: cannot find symbol
+    private static List<Cloudlet> cloudletList;
+                        ^
+  symbol:   class Cloudlet
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:50: error: cannot find symbol
+    private static List<Vm> vmList;
+                        ^
+  symbol:   class Vm
+  location: class AdaptiveZoneSimulation
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:5: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Host;
+                            ^
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:6: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Log;
+                            ^
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:12: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Vm;
+                            ^
+.\org\cloudsim\adaptive\zone\utils\StatisticsAnalyzer.java:4: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Log;
+                            ^
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:204: error: cannot find symbol
+    private static Datacenter createDatacenter(String name) {
+                   ^
+  symbol:   class Datacenter
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:263: error: cannot find symbol
+    private static Datacenter createDatacenter(String name, int numHosts, String algorithm) {
+                   ^
+  symbol:   class Datacenter
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:326: error: cannot find symbol
+    private static DatacenterBroker createBroker() {
+                   ^
+  symbol:   class DatacenterBroker
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:340: error: cannot find symbol
+    private static List<Vm> createVirtualMachines(int brokerId) {
+                        ^
+  symbol:   class Vm
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:366: error: cannot find symbol
+    private static List<Vm> createVirtualMachinesFromScenario(int brokerId, Map<String, Object> scenarioConfig) {
+                        ^
+  symbol:   class Vm
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:390: error: cannot find symbol
+    private static List<Cloudlet> createCloudlets(int brokerId) {
+                        ^
+  symbol:   class Cloudlet
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:409: error: cannot find symbol
+    private static List<Cloudlet> createCloudletsFromScenario(int brokerId, int numCloudlets) {
+                        ^
+  symbol:   class Cloudlet
+  location: class AdaptiveZoneSimulation
+org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java:426: error: cannot find symbol
+    private static Object[] collectSimulationResults(DatacenterBroker broker, String algorithm) {
+                                                     ^
+  symbol:   class DatacenterBroker
+  location: class AdaptiveZoneSimulation
+.\org\cloudsim\adaptive\zone\core\ResourceZone.java:7: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Vm;
+                            ^
+.\org\cloudsim\adaptive\zone\core\ZoneMetrics.java:6: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Vm;
+                            ^
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:58: error: cannot find symbol
+    public void categorizeVMs(List<Vm> vmList) {
+                                   ^
+  symbol:   class Vm
+  location: class ZoneManager
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:77: error: cannot find symbol
+    private void calculateResourceThresholds(List<Vm> vmList) {
+                                                  ^
+  symbol:   class Vm
+  location: class ZoneManager
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:111: error: cannot find symbol
+    private int determineVMZone(Vm vm) {
+                                ^
+  symbol:   class Vm
+  location: class ZoneManager
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:133: error: cannot find symbol
+    public void assignVMToZone(Vm vm, int zoneId) {
+                               ^
+  symbol:   class Vm
+  location: class ZoneManager
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:151: error: cannot find symbol
+    public boolean migrateVMBetweenZones(Vm vm, int targetZoneId) {
+                                         ^
+  symbol:   class Vm
+  location: class ZoneManager
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:180: error: cannot find symbol
+    public boolean migrateVMToZoneAndHost(Vm vm, int targetZoneId, List<? extends org.cloudbus.cloudsim.Host> hostList) {
+                                          ^
+  symbol:   class Vm
+  location: class ZoneManager
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:180: error: package org.cloudbus.cloudsim does not exist
+    public boolean migrateVMToZoneAndHost(Vm vm, int targetZoneId, List<? extends org.cloudbus.cloudsim.Host> hostList) {
+                                                                                                       ^
+.\org\cloudsim\adaptive\zone\core\ZoneManager.java:310: error: cannot find symbol
+    private Integer findBestTargetZone(Vm vm, List<Integer> candidateZones) {
+                                       ^
+  symbol:   class Vm
+  location: class ZoneManager
+.\org\cloudsim\adaptive\zone\core\ZoneMetrics.java:14: error: cannot find symbol
+    private List<Vm> vms;
+                 ^
+  symbol:   class Vm
+  location: class ZoneMetrics
+.\org\cloudsim\adaptive\zone\core\ZoneMetrics.java:34: error: cannot find symbol
+    public void addVM(Vm vm) {
+                      ^
+  symbol:   class Vm
+  location: class ZoneMetrics
+.\org\cloudsim\adaptive\zone\core\ZoneMetrics.java:44: error: cannot find symbol
+    public void removeVM(Vm vm) {
+                         ^
+  symbol:   class Vm
+  location: class ZoneMetrics
+.\org\cloudsim\adaptive\zone\core\ResourceZone.java:16: error: cannot find symbol
+    private List<Vm> assignedVMs;
+                 ^
+  symbol:   class Vm
+  location: class ResourceZone
+.\org\cloudsim\adaptive\zone\core\ResourceZone.java:35: error: cannot find symbol
+    public void addVM(Vm vm) {
+                      ^
+  symbol:   class Vm
+  location: class ResourceZone
+.\org\cloudsim\adaptive\zone\core\ResourceZone.java:46: error: cannot find symbol
+    public void removeVM(Vm vm) {
+                         ^
+  symbol:   class Vm
+  location: class ResourceZone
+.\org\cloudsim\adaptive\zone\core\ResourceZone.java:58: error: cannot find symbol
+    public List<Vm> getVMsForMigration(int count) {
+                ^
+  symbol:   class Vm
+  location: class ResourceZone
+.\org\cloudsim\adaptive\zone\core\ResourceZone.java:70: error: cannot find symbol
+    public double calculateVMFitScore(Vm vm) {
+                                      ^
+  symbol:   class Vm
+  location: class ResourceZone
+.\org\cloudsim\adaptive\zone\core\ResourceZone.java:95: error: cannot find symbol
+    public List<Vm> getVMs() { return new ArrayList<>(assignedVMs); }
+                ^
+  symbol:   class Vm
+  location: class ResourceZone
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:7: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Host;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:8: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Vm;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:9: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.VmAllocationPolicy;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:10: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Log;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:15: error: cannot find symbol
+public class BestFitAllocation extends VmAllocationPolicy {
+                                       ^
+  symbol: class VmAllocationPolicy
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:17: error: cannot find symbol
+    private Map<String, Vm> vmTable;
+                        ^
+  symbol:   class Vm
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:19: error: cannot find symbol
+    public BestFitAllocation(List<? extends Host> hostList) {
+                                            ^
+  symbol:   class Host
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:25: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm) {
+                                     ^
+  symbol:   class Vm
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:52: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm, Host host) {
+                                     ^
+  symbol:   class Vm
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:52: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm, Host host) {
+                                            ^
+  symbol:   class Host
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:61: error: cannot find symbol
+    public List<Map<String, Object>> optimizeAllocation(List<? extends Vm> vmList) {
+                                                                       ^
+  symbol:   class Vm
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:66: error: cannot find symbol
+    public void deallocateHostForVm(Vm vm) {
+                                    ^
+  symbol:   class Vm
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:75: error: cannot find symbol
+    public Host getHost(Vm vm) {
+                        ^
+  symbol:   class Vm
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:75: error: cannot find symbol
+    public Host getHost(Vm vm) {
+           ^
+  symbol:   class Host
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\BestFitAllocation.java:80: error: cannot find symbol
+    public Host getHost(int vmId, int userId) {
+           ^
+  symbol:   class Host
+  location: class BestFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:7: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Host;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:8: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Vm;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:9: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.VmAllocationPolicy;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:10: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Log;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:16: error: cannot find symbol
+public class FirstFitAllocation extends VmAllocationPolicy {
+                                        ^
+  symbol: class VmAllocationPolicy
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:18: error: cannot find symbol
+    private Map<String, Vm> vmTable;
+                        ^
+  symbol:   class Vm
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:20: error: cannot find symbol
+    public FirstFitAllocation(List<? extends Host> hostList) {
+                                             ^
+  symbol:   class Host
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:26: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm) {
+                                     ^
+  symbol:   class Vm
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:41: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm, Host host) {
+                                     ^
+  symbol:   class Vm
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:41: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm, Host host) {
+                                            ^
+  symbol:   class Host
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:50: error: cannot find symbol
+    public List<Map<String, Object>> optimizeAllocation(List<? extends Vm> vmList) {
+                                                                       ^
+  symbol:   class Vm
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:55: error: cannot find symbol
+    public void deallocateHostForVm(Vm vm) {
+                                    ^
+  symbol:   class Vm
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:64: error: cannot find symbol
+    public Host getHost(Vm vm) {
+                        ^
+  symbol:   class Vm
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:64: error: cannot find symbol
+    public Host getHost(Vm vm) {
+           ^
+  symbol:   class Host
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\FirstFitAllocation.java:69: error: cannot find symbol
+    public Host getHost(int vmId, int userId) {
+           ^
+  symbol:   class Host
+  location: class FirstFitAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:4: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Log;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:8: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Host;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:9: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Vm;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:10: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.VmAllocationPolicy;
+                            ^
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:15: error: cannot find symbol
+public class RoundRobinAllocation extends VmAllocationPolicy {
+                                          ^
+  symbol: class VmAllocationPolicy
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:17: error: cannot find symbol
+    private Map<String, Vm> vmTable;
+                        ^
+  symbol:   class Vm
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:20: error: cannot find symbol
+    public RoundRobinAllocation(List<? extends Host> hostList) {
+                                               ^
+  symbol:   class Host
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:27: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm) {
+                                     ^
+  symbol:   class Vm
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:52: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm, Host host) {
+                                     ^
+  symbol:   class Vm
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:52: error: cannot find symbol
+    public boolean allocateHostForVm(Vm vm, Host host) {
+                                            ^
+  symbol:   class Host
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:61: error: cannot find symbol
+    public List<Map<String, Object>> optimizeAllocation(List<? extends Vm> vmList) {
+                                                                       ^
+  symbol:   class Vm
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:66: error: cannot find symbol
+    public void deallocateHostForVm(Vm vm) {
+                                    ^
+  symbol:   class Vm
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:75: error: cannot find symbol
+    public Host getHost(Vm vm) {
+                        ^
+  symbol:   class Vm
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:75: error: cannot find symbol
+    public Host getHost(Vm vm) {
+           ^
+  symbol:   class Host
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\algorithms\RoundRobinAllocation.java:80: error: cannot find symbol
+    public Host getHost(int vmId, int userId) {
+           ^
+  symbol:   class Host
+  location: class RoundRobinAllocation
+.\org\cloudsim\adaptive\zone\core\AdaptiveVmAllocationPolicy.java:4: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Log;
+                            ^
+.\org\cloudsim\adaptive\zone\core\AdaptiveVmAllocationPolicy.java:8: error: package org.cloudbus.cloudsim does not exist
+import org.cloudbus.cloudsim.Host;
+                            ^
+Note: org\cloudsim\adaptive\zone\AdaptiveZoneSimulation.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors
+only showing the first 100 errors, of 320 total; use -Xmaxerrs if you would like to see more

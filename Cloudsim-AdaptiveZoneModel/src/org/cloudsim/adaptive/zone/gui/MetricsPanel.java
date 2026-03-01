@@ -183,4 +183,8 @@ public class MetricsPanel extends JPanel {
             default: return "Zone " + zoneId;
         }
     }
+
+    public void setZoneManager(ZoneManager zoneManager) {
+        this.zoneManager = zoneManager;
+    }
 }

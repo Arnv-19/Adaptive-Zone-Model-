@@ -195,4 +195,8 @@ public class ZoneVisualizationPanel extends JPanel {
     public void reset() {
         repaint();
     }
+
+    public void setZoneManager(ZoneManager zoneManager) {
+        this.zoneManager = zoneManager;
+    }
 }
